@@ -2,9 +2,9 @@ function HomePage() {
   const socialsDiv = (
     <>
       <span className="flex items-center gap-5 max-sm:hidden">
-        <i className="fa-brands fa-instagram fa-xl"></i>
         <i className="fa-brands fa-linkedin fa-xl"></i>
-        <i className="fa-brands fa-whatsapp fa-xl"></i>
+        <i className="fa-brands fa-square-upwork fa-xl"></i>
+        <i className="fa-brands fa-instagram fa-xl"></i>
       </span>
     </>
   );
