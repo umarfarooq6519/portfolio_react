@@ -1,19 +1,6 @@
-import Lottie from "react-lottie";
-import scrolldown from "../assets/cupcake_scrolldown.json";
-
 function HomePage() {
-  const defaultOptions = {
-    loop: true,
-    autoplay: true,
-    pause: false,
-    animationData: scrolldown,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
-
   return (
-    <section className="HomePage h-screen px-10 py-6 md:px-24 md:py-14">
+    <section className="HomePage h-screen px-10 py-8 md:px-24 md:py-14">
       <Header />
       <div className="Home-main h-5/6 flex items-center justify-center">
         <span className="flex flex-col items-center">
@@ -31,8 +18,21 @@ function HomePage() {
           </span>
         </span>
       </div>
-      <span className="flex items-center xl:-mt-4">
-        <Lottie options={defaultOptions} height={100} width={100} />{" "}
+      <span className="flex max-sm:justify-center justify-between items-center">
+        <span className="flex items-center gap-5 max-sm:hidden">
+          <i className="fa-brands fa-instagram fa-2xl"></i>
+          <i className="fa-brands fa-linkedin fa-2xl"></i>
+          <i className="fa-brands fa-whatsapp fa-2xl"></i>
+        </span>
+
+        <dotlottie-player
+          src="https://lottie.host/dc434165-0e80-464e-b7c8-c9842a1e05ac/ENqpGRbGZK.lottie"
+          background="transparent"
+          speed="1"
+          style={{ width: "100px", height: "100px" }}
+          loop
+          autoplay
+        ></dotlottie-player>
       </span>
     </section>
   );
