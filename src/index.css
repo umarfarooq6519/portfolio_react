@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "General Sans", sans-serif;
+}
+
+.heading {
+  font-family: "Bebas neue", sans-serif;
+}
