@@ -1,4 +1,14 @@
 function HomePage() {
+  const socialsDiv = (
+    <>
+      <span className="flex items-center gap-5 max-sm:hidden">
+        <i className="fa-brands fa-instagram fa-xl"></i>
+        <i className="fa-brands fa-linkedin fa-xl"></i>
+        <i className="fa-brands fa-whatsapp fa-xl"></i>
+      </span>
+    </>
+  );
+
   return (
     <section className="HomePage h-screen px-10 py-8 md:px-24 md:py-14">
       <Header />
@@ -6,7 +16,7 @@ function HomePage() {
         <span className="flex flex-col items-center">
           <h1 className="text-6xl md:text-7xl heading">Umar Farooq</h1>
           <span className="flex flex-col">
-            <h2 className="text-xl">Web Developer - Front End</h2>
+            <h2 className="text-xl">Web Developer - Full Stack</h2>
             <span className="flex justify-between px-6 pt-2">
               <span>
                 <i className="fa-solid fa-location-dot mr-2"></i>Pakistan
@@ -19,12 +29,7 @@ function HomePage() {
         </span>
       </div>
       <span className="flex max-sm:justify-center justify-between items-center">
-        <span className="flex items-center gap-5 max-sm:hidden">
-          <i className="fa-brands fa-instagram fa-2xl"></i>
-          <i className="fa-brands fa-linkedin fa-2xl"></i>
-          <i className="fa-brands fa-whatsapp fa-2xl"></i>
-        </span>
-
+        {socialsDiv}
         <dotlottie-player
           src="https://lottie.host/dc434165-0e80-464e-b7c8-c9842a1e05ac/ENqpGRbGZK.lottie"
           background="transparent"
