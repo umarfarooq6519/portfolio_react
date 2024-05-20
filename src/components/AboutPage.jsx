@@ -1,6 +1,6 @@
 function AboutPage() {
   const about_paragraph = (
-    <div className="max-w-xl text-center flex flex-col gap-3">
+    <div className="max-w-3xl text-center flex flex-col gap-3">
       <span className="about-paragraph">
         <span className="font-medium">Hey Peeps!</span> I'm Umar, a Web
         Developer located in <span className="font-medium">Pakistan</span> with
@@ -22,7 +22,7 @@ function AboutPage() {
 
   //   ##########  About Page ##########
   return (
-    <section className="AboutPage min-h-screen px-10 py-12 md:px-24 md:py-14 flex flex-col gap-4 w-full justify-center items-center">
+    <section className="AboutPage min-h-screen px-10 py-12 md:px-24 md:py-14 max-md:pt-24 flex flex-col gap-4 w-full justify-center items-center">
       <div className="about-header flex flex-col items-center w-fit">
         Get to Know
         <span className="heading text-4xl md:text-5xl">About Me</span>
