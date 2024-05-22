@@ -22,7 +22,7 @@ function AboutPage() {
 
   //   ##########  About Page ##########
   return (
-    <section className="AboutPage min-h-screen px-10 py-12 md:px-24 md:py-14 max-md:pt-24 flex flex-col gap-4 w-full justify-center items-center">
+    <section id="about" className="AboutPage min-h-screen px-10 py-12 md:px-24 md:py-14 max-md:pt-24 flex flex-col gap-4 w-full justify-center items-center">
       <div className="about-header flex flex-col items-center w-fit">
         Get to Know
         <span className="heading text-4xl md:text-5xl">About Me</span>
