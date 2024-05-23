@@ -1,16 +1,67 @@
 function ExpertisePage() {
   return (
-    <section id="expertise" className="Expertise min-h-screen flex flex-col gap-14 items-center justify-center px-10 py-12 md:px-24 md:py-14">
-      <div className="expertise-header flex flex-col items-center w-fit">
-        Explore my
-        <span className="heading text-4xl md:text-5xl ">Expertise</span>
+    <section
+      id="expertise"
+      className="Expertise min-h-screen flex flex-col gap-20 items-center justify-center px-10 py-12 md:px-24 md:py-14"
+    >
+      <div className="flex flex-col items-center gap-10">
+        <div className="expertise-header flex flex-col items-center w-fit">
+          Explore my
+          <span className="heading text-4xl md:text-5xl">Expertise</span>
+        </div>
+
+        <div className="flex max-lg:flex-col gap-10 lg:gap-24">
+          <Frontend />
+          <Backend />
+        </div>
       </div>
 
-      <div className="flex max-lg:flex-col gap-12 lg:gap-24">
-        <Frontend />
-        <Backend />
+      <div className="certifications flex flex-col gap-4 items-center">
+        <h3 className="heading text-2xl text-center pb-3">Certifications</h3>
+        <Certifications />
       </div>
     </section>
+  );
+}
+
+function Certifications() {
+  const certificates = [
+    {
+      id: 0,
+      title: "Getting started as Full Stack Developer",
+      body: "By Tom Geller - LinkedIn Learning",
+      link: "https://bit.ly/44koqtZ",
+    },
+    {
+      id: 1,
+      title: "Learning Rest APIs",
+      body: "By Morten - LinkedIn Learning",
+      link: "https://bit.ly/3QoNnP7",
+    },
+  ];
+
+  return (
+    <ol className="relative max-w-lg border-s border-neutral-content">
+      <span className="flex flex-col gap-4">
+        {certificates.map((item) => (
+          <li key={item.id} className="ms-4">
+            <div className="absolute w-3 h-3 rounded-full mt-1.5 -start-[6.2px] bg-neutral"></div>
+            <span className="flex items-center">
+              <a
+                href={item.link}
+                target="_blank"
+                className="font-semibold text-lg"
+              >
+                {item.title}
+              </a>
+              <i className="fa-solid fa-arrow-right-long fa-sm ml-2 mt-1"></i>
+            </span>
+
+            <p>{item.body}</p>
+          </li>
+        ))}
+      </span>
+    </ol>
   );
 }
 
