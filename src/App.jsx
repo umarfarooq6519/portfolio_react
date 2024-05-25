@@ -51,7 +51,7 @@ function App() {
 
 function Footer() {
   return (
-    <section className="border w-full flex flex-col gap-6 items-center text-base faded justify-center py-1">
+    <section className="w-full flex flex-col gap-6 items-center text-base faded justify-center py-1">
       <p>
         Copyright<i className="fa-regular fa-copyright fa-sm px-1.5"></i>2024
         Umar Farooq All Rights Reserved
