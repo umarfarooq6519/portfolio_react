@@ -1,11 +1,27 @@
 function HomePage() {
+  const linkedin_link = "https://www.linkedin.com/in/umar-farooq-325811255/";
+  const upwork_link = "https://www.upwork.com/freelancers/~018e9328fc604635b6";
+  const insta_link = "https://www.instagram.com/umar._.52/";
+
   const socialsDiv = (
     <>
-      <span className="flex items-center gap-5 max-sm:hidden">
-        <i className="fa-brands fa-linkedin fa-xl"></i>
-        <i className="fa-brands fa-square-upwork fa-xl"></i>
-        <i className="fa-brands fa-instagram fa-xl"></i>
-      </span>
+      <ul className="flex items-center gap-5 max-sm:hidden">
+        <li>
+          <a href={linkedin_link} target="_blank">
+            <i className="fa-brands fa-linkedin fa-xl"></i>
+          </a>
+        </li>
+        <li>
+          <a href={upwork_link} target="_blank">
+            <i className="fa-brands fa-square-upwork fa-xl"></i>
+          </a>
+        </li>
+        <li>
+          <a href={insta_link} target="_blank">
+            <i className="fa-brands fa-instagram fa-xl"></i>
+          </a>
+        </li>
+      </ul>
     </>
   );
 
@@ -29,6 +45,9 @@ function HomePage() {
 }
 
 function Header() {
+  const resume_path =
+    "https://www.canva.com/design/DAF_foF_iIc/sxu5yHjuJF74gR0tNd-aRA/edit?utm_content=DAF_foF_iIc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton";
+
   const navItems = [
     {
       id: 0,
@@ -83,7 +102,9 @@ function Header() {
         </ul>
       </div>
       <span className="resume flex items-center">
-        <a className="hover:opacity-80">My Résumé</a>
+        <a href={resume_path} target="_blank" className="hover:opacity-80">
+          My Résumé
+        </a>
         <i className="fa-solid fa-arrow-up-right-from-square fa-xs ml-2 mb-0.5"></i>
       </span>
     </span>

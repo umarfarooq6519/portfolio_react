@@ -1,4 +1,5 @@
 import AboutPage from "./components/AboutPage";
+import ContactPage from "./components/ContactPage";
 import ExpertisePage from "./components/ExpertisePage";
 import HomePage from "./components/HomePage";
 import Loading from "./components/Loading";
@@ -42,6 +43,19 @@ function App() {
       <AboutPage />
       <ExpertisePage />
       <ProjectsPage />
+      <ContactPage />
+      <Footer />
+    </section>
+  );
+}
+
+function Footer() {
+  return (
+    <section className="border w-full flex flex-col gap-6 items-center text-base faded justify-center py-1">
+      <p>
+        Copyright<i className="fa-regular fa-copyright fa-sm px-1.5"></i>2024
+        Umar Farooq All Rights Reserved
+      </p>
     </section>
   );
 }

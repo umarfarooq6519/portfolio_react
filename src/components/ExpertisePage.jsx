@@ -72,22 +72,22 @@ function Frontend() {
       <span className="skills text-3xl flex justify-between">
         <div className="tooltip" data-tip="HTML5">
           <button className="pt-2">
-            <i className="fa-brands fa-html5 fa-2xl "></i>
+            <i className="fa-brands fa-html5 fa-2xl"></i>
           </button>
         </div>
         <div className="tooltip" data-tip="CSS3">
           <button className="pt-2">
-            <i className="fa-brands fa-css3-alt fa-2xl "></i>
+            <i className="fa-brands fa-css3-alt fa-2xl"></i>
           </button>
         </div>
         <div className="tooltip" data-tip="Bootstrap">
           <button className="pt-2">
-            <i className="fa-brands fa-bootstrap fa-2xl "></i>
+            <i className="fa-brands fa-bootstrap fa-2xl"></i>
           </button>
         </div>
         <div className="tooltip" data-tip="ReactJS">
           <button className="pt-2">
-            <i className="fa-brands fa-react fa-2xl "></i>
+            <i className="fa-brands fa-react fa-2xl"></i>
           </button>
         </div>
       </span>
